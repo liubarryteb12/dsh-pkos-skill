@@ -20,7 +20,7 @@ platforms: [windows]
 
 
 
-Personal Knowledge OS（PKOS）套件的 Hermes 原生封装。套件根 = 本技能根（`<skill>/_PKOS/` 是知识库，20 个 `pkos-*` 子目录各是一个能力单元，`contracts/` 是权威契约）。本 SKILL.md 只做**入口与调度**；每个单元的详细契约看它自己的 `pkos-<unit>/SKILL.md`（24 个已由 `tests/contract_refs.py` 验证互相一致），单元速查表见 `references/unit-map.md`。
+Personal Knowledge OS（PKOS）套件的 DeepSeek Harness（DSH）适配发行版。套件根 = 本技能根（`<skill>/_PKOS/` 是知识库，20 个 `pkos-*` 子目录各是一个能力单元，`contracts/` 是权威契约）。本 SKILL.md 只做**入口与调度**；每个单元的详细契约看它自己的 `pkos-<unit>/SKILL.md`（24 个已由 `tests/contract_refs.py` 验证互相一致），单元速查表见 `references/unit-map.md`。
 
 
 

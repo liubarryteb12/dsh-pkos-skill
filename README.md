@@ -97,18 +97,22 @@
 - Python 3.11+
 - 一个 Obsidian 仓库（vault）——它管理的就是这个文件夹
 
-### 安装（给 Hermes Agent 用户）
+### 安装（给 DeepSeek Harness / DSH 用户）
 
 ```bash
-# 1. 克隆到 Hermes 技能目录
-cd "$env:LOCALAPPDATA\hermes\skills\note-taking"
+# 1. 克隆到 DSH 的技能目录（DSH 会自动发现 .agents/skills/ 下的技能）
+cd <你的 dsh 仓库根>/.agents/skills
 git clone https://github.com/liubarryteb12/dsh-pkos-skill.git
 
 # 2. 体检：确认小工人们都到岗了
 cd dsh-pkos-skill
 python scripts/upgrade_check.py     # 应输出 ALL PASS
-python scripts/registry_schema_check.py   # 应输出 PASS (29 单元, 0 警告)
+python scripts/registry_schema_check.py   # 应输出 PASS (33 单元, 0 警告)
 ```
+
+装好后重启 DSH 会话，技能即被加载；对它说「整理知识库」等触发词即可（触发词清单见本仓库 `SKILL.md`）。
+
+> 上游 Hermes 用户请装 [hermes-pkos-skill](https://github.com/liubarryteb12/hermes-pkos-skill)（安装方式见其 README），不要把本仓库装进 Hermes。
 
 ### 第一次使用（告诉你的 AI）
 
