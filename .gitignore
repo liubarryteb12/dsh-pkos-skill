@@ -1,0 +1,12 @@
+# 工作区与缓存不入库
+_PKOS/
+_trash/
+_tmp_test-vault-2/
+.code-review-graph/
+.claude/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+tests/.tmp/
+*.tsbuildinfo
