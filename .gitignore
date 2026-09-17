@@ -14,3 +14,6 @@ tests/.tmp/
 # 操作文件区与调试现场（09-14 迁移：本机资产，不进发布）
 _ops/
 cn_debug/
+
+# 产出产品永不进仓库(09-17 用户裁定强化:skill 套件=纯技能,产出只落用户 workspace)
+workspace/
